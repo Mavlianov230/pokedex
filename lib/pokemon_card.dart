@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class PokemonCard extends StatelessWidget {
   final String? image;
   final String? name;
   final Color? color;
   final Function()? onTap;
+  final String? number; // Add the number parameter
 
   const PokemonCard({
     this.image,
     this.name,
     this.color,
     this.onTap,
+    this.number,  // Initialize the number parameter
     super.key,
   });
 
@@ -58,11 +61,10 @@ class PokemonCard extends StatelessWidget {
               Positioned(
                 right: 1,
                 child: Text(
-                  '#12',
+                  number ?? '#12', // Use the number passed in
                   style: TextStyle(color: color ?? Colors.black, fontSize: 12),
                 ),
               ),
-
             ],
           ),
         ),

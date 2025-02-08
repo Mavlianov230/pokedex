@@ -67,7 +67,7 @@ class PikachuScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           Image.asset(
-                            'assets/image/picachu.png',
+                            'assets/image/pikachu.png',
                             width: 120,
                             height: 120,
                           ),
